@@ -1,0 +1,14 @@
+# Custom BoT-SORT config optimized for soccer tracking with ReID and long memory
+tracker_type: botsort
+track_high_thresh: 0.25
+track_low_thresh: 0.08
+new_track_thresh: 0.35
+track_buffer: 90 # 3 seconds at 30 fps
+match_thresh: 0.75
+fuse_score: True
+
+# BoT-SORT specifics
+gmc_method: sparseOptFlow
+proximity_thresh: 0.5
+appearance_thresh: 0.75
+with_reid: False
