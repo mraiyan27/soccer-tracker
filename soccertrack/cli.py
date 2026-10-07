@@ -10,6 +10,12 @@ from soccertrack.utils.camera import find_intrinsic_camera_parameters, Camera
 from soccertrack.utils.utils import make_video
 from soccertrack.utils import logger, set_log_level
 
+try:
+    import gdown
+except ImportError:
+    gdown = None
+
+
 
 class CLI:
     """CLI for soccertrack."""
